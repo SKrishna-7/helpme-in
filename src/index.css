@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-[#111] bg-gray-100 font-inter;
+}
+
+@layer components {
+  .sub-menu {
+    @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center;
+  }
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+}
