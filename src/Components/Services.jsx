@@ -30,23 +30,27 @@ const Services = () => {
         once:false,amount:0.7
     }}
     className="lg:flex w-full mt-5 mb-5 lg:px-20 px-3 items-center justify-stretch">
-        <div className="lg:w-[100%] justify-between py-1 text-[13px] lg:text-[17px] font-medium text-zinc-600 lg:text-zinc-800 text-justify lg:normal-case tracking-tight uppercase">
+        <div className="lg:w-[100%] justify-between py-1 text-[13px] lg:text-[17px] font-medium text-zinc-600 lg:text-zinc-800 text-justify w-full lg:normal-case   uppercase">
             <p className='py-3'> Nexion Connects is a creative design agency founded in 2024 and based in Ambur, Tamil Nadu. We
  are a team of passionate students skilled in design, development, and marketing. Our goal is to help
  businesses grow with innovative and high-quality digital solutions.</p>
 
-            <p className='py-3 tracking-tighter w-full'>
+    <p className='py-3 tracking-normaltext-left whitespace-normal break-keep w-full '>
             Nexion Connects was founded by Muhammad Aafaque, a student with a deep interest in startups
  and digital solutions. While still in college, he worked with multiple companies, gaining hands-on
  experience in design, web development, and branding. With this knowledge, he started Nexion
  Connects to offer professional services to businesses of all sizes.
             </p>
 
-    <div className="w-full h-[350px] relative lg:hidden">
+    <div className="w-full h-[350px] relative mt-6 mb-6 lg:hidden">
    <img src={founder}
     alt="founder"
     className='w-full h-full lg:hidden object-cover'
      />
+     <div className="absolute bottom-0 w-full bg-black text-white text-center opacity-80 py-2 tracking-wide">
+     <p>Muhammad Aafaque </p>
+     <p>Co-founder </p>
+     </div>
      </div>
     <p className='lg:block hidden'>He saw the difficulties that startups and small businesses faced in branding, web presence, and
  marketing. 
@@ -66,12 +70,12 @@ This motivated him to build a team that could offer practical and effective solu
     }}
     className="lg:p-20 p-2 lg:flex w-full relative">
     <div className="lg:w-[500px] w-full flex justify-evenly items-center border-l-2 ">
-            <h1 className='lg:text-5xl font-bold lg:px-5  text-5xl text-orange-600 tracking-tighter'>10</h1>
-            <p className='text-[12px] lg:text-base font-thin lg:leading-1 py-3 pl-3 lg:normal-case uppercase tracking-tight text-gray-600 lg:text-zinc-900 leading-0'>successful agency projects - Brand Identity, Website Design, Product Packaging</p>
+            <h1 className='lg:text-5xl font-bold lg:px-5  text-5xl px-2 text-orange-600 tracking-tighter'>10</h1>
+            <p className='text-[12px] lg:text-base font-thin lg:leading-1 py-3 pl-2 lg:normal-case uppercase tracking-tight text-gray-600 lg:text-zinc-900 leading-0'>successful agency projects - Brand Identity, Website Design, Product Packaging</p>
         </div>
         <div className="lg:w-[500px] w-full  flex justify-between  items-center border-l-2 lg:mt-0 mt-8">
         <h1 className='font-bold text-5xl lg:px-5 px-2 text-orange-600'>5*</h1>
-        <p className='text-[12px] w-full font-thin lg:text-base py-3 lg:leading-1 lg:normal-case uppercase text-gray-600 lg:text-gray-800 tracking-tight'>In just five months, we have successfully delivered over 10 projects</p>
+        <p className='text-[12px] w-full font-thin lg:text-base py-3 lg:leading-1 lg:normal-case uppercase text-gray-600 lg:text-gray-800 tracking-tight pl-1   '>In just five months, we have successfully delivered over 10 projects</p>
 
         </div>
     </motion.div>

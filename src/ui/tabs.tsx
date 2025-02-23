@@ -31,7 +31,7 @@ export const Tabs = ({
         " [perspective:1000px]  overflow-auto sm:overflow-visible no-visible-scrollbar  w-full max-w-max justify-evenly lg:h-full text-black ",
         containerClassName
       )}>
-      <div className="lg:h-[70%] flex flex-col max-w-max
+      <div className="lg:h-[80%] flex flex-col max-w-max
       justify-evenly h-max  ">
       {propTabs.map((tab, idx) => (
         <button
@@ -41,7 +41,7 @@ export const Tabs = ({
           }}
           onMouseEnter={() => setHovering(true)}
           onMouseLeave={() => setHovering(false)}
-          className={cn("lg:relative  py-2  ", tabClassName)}
+          className={cn("lg:relative  py-5  ", tabClassName)}
           style={{
             transformStyle: "preserve-3d",
           }}>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import {fadeIn} from '../ui/Varient'
 const Showreel = () => {
   return (
-    <div className="w-full mt-[10%]  bg-white pt-20">
+    <div className="w-full pt-[10%]  bg-white pt-20">
         <div className="lg:flex lg:justify-between w-full lg:items-center">
             <div className="w-full">
                 {/* <video src="https://dd.nyc/wp-content/uploads/2025/01/Showreel_bestbig-compressed.mp4" className=''autoPlay></video> */}
