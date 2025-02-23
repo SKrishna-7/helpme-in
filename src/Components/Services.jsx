@@ -6,7 +6,7 @@ import founder from '../assets/founder.png'
 const Services = () => {
   return (
 
-    <div className="w-full max-h-max bg-white relative lg:pt-36 pt-20 relative">
+    <div className="w-full max-h-max bg-white lg:pt-36 pt-20 relative">
    
     <motion.div className="lg:px-20 px-2"
     variants={fadeIn("left",0.1)}
@@ -35,7 +35,7 @@ const Services = () => {
  are a team of passionate students skilled in design, development, and marketing. Our goal is to help
  businesses grow with innovative and high-quality digital solutions.</p>
 
-            <p className='py-3 tracking-tighter text-justify w-full'>
+            <p className='py-3 tracking-tighter w-full'>
             Nexion Connects was founded by Muhammad Aafaque, a student with a deep interest in startups
  and digital solutions. While still in college, he worked with multiple companies, gaining hands-on
  experience in design, web development, and branding. With this knowledge, he started Nexion
