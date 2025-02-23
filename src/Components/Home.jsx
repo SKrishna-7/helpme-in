@@ -1,14 +1,24 @@
 import React from 'react'
 import clutch from '../assets/clutch.svg'
+import { motion } from 'framer-motion'
+import {fadeIn} from '../ui/Varient'
 const Home = () => {
   return (
    <div className="w-full lg:h-full flex flex-col lg:mt-[15%] font-clashdisplay  justify-center lg:px-16 px-2 relative h-screen items-center ">
-    <div className="w-full leading-none mt-7 ">
+    <motion.div 
+    variants={fadeIn("up",0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{
+        once:false,amount:0.7
+    }}
+
+    className="w-full leading-none mt-7 ">
         <p className='lg:text-[70px] text-4xl lg:font-[800] leading-none uppercase tracking-tighter font-bold lg:block hidden'>Nexion Connects. </p> <br />
         <p className='lg:text-[70px] text-5xl relative lg:font-[800] font-[500] text-orange-600 tracking-tighter pt-4 leading-[50px] lg:text-left text-left uppercase'>
             Сreative design agency.
             </p>
-    </div>
+    </motion.div>
 
     <div className="lg:mt-[10%] w-full flex lg:justify-between mt-[20%]">
         <div className="hidden"></div>
