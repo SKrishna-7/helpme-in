@@ -2,7 +2,7 @@
  
 import { Tabs } from "../ui/tabs";
 import { useState } from "react";
-import WebSevices from "./Services/web";
+import WebSevices from "./Services/Web";
 import UiServices from "./Services/ui";
 import SEOServices from "./Services/seo";
 import GraphicServices from "./Services/Graphic";
