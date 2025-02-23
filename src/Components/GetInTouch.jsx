@@ -4,7 +4,7 @@ import heart from '../assets/heart.svg'
 
 const GetInTouch = () => {
   const [focused, setFocused] = useState(null);
-  const services = ["Branding", "Web Design", "UX/UI", "Development","Video Production","Brand Assets","Deck","Other"];
+  const services = ["Branding", "Web Design", "UX/UI", "Development","Artificial Intelligence","SEO","Graphic Design"];
   const [selectedServices, setSelectedServices] = useState([]);
 
   const toggleService = (service) => {
@@ -15,8 +15,8 @@ const GetInTouch = () => {
     );
   };
   return (
-    <div className="w-full min-h-screen bg-white flex flex-col items-center lg:pt-24 ">
-      <h2 className="text-center lg:text-5xl text-2xl font-bold">Get in Touch with <b className="text-orange-500">Nexion</b></h2>
+    <div className="w-full min-h-screen bg-white flex flex-col items-center lg:pt-24 pb-16">
+      <h2 className="text-center lg:text-5xl text-2xl pt-24 uppercase">Get in Touch with </h2>
 
       {/* Form Section */}
       <div className="w-full flex flex-col lg:flex-row py-20 lg:px-10 justify-center gap-12 ">
@@ -24,7 +24,7 @@ const GetInTouch = () => {
         <div className="lg:p-8 p-4 rounded-lg w-full lg:w-1/2">
           <form className="flex flex-col gap-6">
             {/* Input Fields */}
-            {["Your Name", "Your Email", "Your Message"].map((placeholder, index) => (
+            {["Name", "Mail", "Message"].map((placeholder, index) => (
               <div
                   key={placeholder}
               >
@@ -32,7 +32,7 @@ const GetInTouch = () => {
                   type={placeholder === "Your Email" ? "email" : "text"}
                   placeholder={placeholder}
                   className="w-full p-3 bg-transparent border-b focus:border-gray-900 transition-all duration-300 border-gray-300 outline-none
-                  text-lg font-semibold"
+                  text-lg "
                   onFocus={() => setFocused(index)}
                   onBlur={() => setFocused(null)}
                 />
@@ -44,14 +44,14 @@ const GetInTouch = () => {
           </form>
         </div>
 
-        <div className=" lg:p-8 p-4 w-full lg:w-1/2">
-          <p className="text-xl font-semibold">I'm interested in...</p>
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3 mt-5">
+        <div className=" lg:p-8 p- w-full lg:w-1/2">
+          <p className="text-lg uppercase px-3">I'm interested in</p>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap- mt-5">
 
   {services.map((service) => (
     <div
       key={service}
-      className={`p-3 m-2 text-sm font-bold  rounded-2xl cursor-pointer text-center
+      className={`p-3 m-2 text-sm font-light rounded-2xl cursor-pointer text-center
         ${
             selectedServices.includes(service)
             ? "bg-orange-500 text-white" 

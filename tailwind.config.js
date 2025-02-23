@@ -21,7 +21,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Manrope", "sans-serif"],
+        inter: ["ClashDisplay-Regular", "sans-serif"],
         clashdisplay:["ClashDisplay-Regular","sans-serif"]
       },
     },

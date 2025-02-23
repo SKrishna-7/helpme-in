@@ -43,8 +43,8 @@ function App() {
       </div>
       <div id="work">
       <Aboutus/>
-      <Vision/>
       <MovingText/>
+      <Vision/>
       </div>
       <div id="contact">
       <GetInTouch/>

@@ -8,9 +8,9 @@ const Showreel = () => {
                 {/* <video src="https://dd.nyc/wp-content/uploads/2025/01/Showreel_bestbig-compressed.mp4" className=''autoPlay></video> */}
                 <img src={image} alt="" className='w-full  h-[500px] object-cover' />
             </div>
-            <div className="lg:w-[80%] lg:p-10 pt-7 px-2 w-full">
-                <p className='lg:text-5xl text-4xl w-max font-extrabold lg:p-4'>Nexicon Connection® <br /> Our Inspiration</p>
-                <p className='lg:p-4 py-3 px-2 text-lg lg:leading-tight text-left'>
+            <div className="lg:w-[80%] lg:p-10 pt-7 px-1 w-full">
+                <p className='lg:text-5xl text-[23px]  uppercase w-full font-medium lg:p-4 px-2 pt-7 lg:font-extrabold'>Our Inspiration</p>
+                <p className='lg:p-4 py-9 px-2 text-sm lg:leading text-left text-gray-600 leading-5 uppercase lg:normal-case lg:text-lg lg:text-zinc-900'>
                 Nexion Connects was started with a passion for creativity, technology, and problem-solving. 
 Our journey began as a group of students eager to explore the digital world and make an impact. 
 Seeing how businesses struggle to build a strong digital presence, we decided to create an agency 

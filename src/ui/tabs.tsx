@@ -56,11 +56,11 @@ export const Tabs = ({
           )}
 
           <span className={`relative
-          block
+          block lg:normal-case uppercase
           ${active.value == tab.value ? "text-black" :'text-zinc-400'}
              hover:text-orange-500
-          text-left pl-2 lg:pl-20 lg:text-5xl
-          font-extrabold `}>
+          text-left  lg:font-extrabold pl-2 lg:pl-20 lg:text-5xl
+           `}>
             {tab.title}
           </span>
         </button>

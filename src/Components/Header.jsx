@@ -26,7 +26,7 @@ const Header = () => {
         ${scrolling? "bg-black text-white" : "bg-transparent"}`}>
         <nav className=" flex justify-between items-center h-full w-full  lg:px-12 px-1">
           <div className="flex justify-center z-[999] relative">
-            <img src={Logo} alt="" className={`w-[200px] mb-2 
+            <img src={Logo} alt="" className={`w-[130px] mb-2 
             ${
               scrolling ? "filter invert brightness-0" : ""
             }
@@ -44,7 +44,7 @@ const Header = () => {
           <div className="flex lg:w-[200px] justify-around">
             <button
               aria-label="sign-in"
-              className="font-medium text-[17px] px-3 text-gray-600 "
+              className="font-medium text-[17px] px-3 text-gray-600 hidden "
             >
               Careers
             </button>

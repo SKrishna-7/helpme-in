@@ -54,7 +54,7 @@ export default function Aboutus() {
    
     return (
         <div className="h-screen w-full lg:px-10  bg-white px-3 max-h-full  lg:overflow-hidden">
-            <h1 className="text-2xl font-bold text-left pt-20 text-orange-500">Our Services</h1>
+            <h1 className="text-2xl pb-6 text-left pt-20 text-orange-600">Our Services</h1>
       <div className=" h-full [perspective:1000px]  mt-1 flex ">
         <div className="w-full lg:flex ">
                 <Tabs tabs={tabs} />

@@ -23,8 +23,8 @@ export default function MobMenu({ Menus,scroll }) {
 
   return (
     <div>
-      <button className="lg:hidden z-[999] relative" onClick={toggleDrawer}>
-        {isOpen ? <X /> : <Menu />}
+      <button className="lg:hidden z-[999] relative px-3" onClick={toggleDrawer}>
+        {isOpen ? <X /> : <Menu size={40}  />}
       </button>
 
       <motion.div
