@@ -53,12 +53,12 @@ export const StickyScroll = ({
         // backgroundColor: backgroundColors[activeCard % backgroundColors.length],
         backgroundColor:'black'
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-16  lg:p-10 p-4"
+      className="lg:h-[30rem] h-[30rem] overflow-y-auto flex justify-center relative space-x-16  lg:p-10 p-4"
       ref={ref}>
-      <div className="div relative flex items-start lg:px-4 px-2">
+      <div className="relative flex items-start lg:px-4 px-2">
         <div className="max-w-2xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div key={item.title + index} className="lg:my-32 my-28">
               <motion.h2
                 initial={{
                   opacity: 0,
@@ -66,7 +66,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="lg:text-3xl text-2xl font-bold text-white">
+                className="text-2xl font-bold text-white">
                 {item.title}
               </motion.h2>
               <motion.p
@@ -74,9 +74,9 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: activeCard === index ? 1 : 0.2,
                 }}
-                className=" text-slate-300 max-w-md mt-4 text-left capitalize text-sm">
+                className=" text-slate-300 max-w-md  mt-4 text-left capitalize text-sm">
                 {item.description}
               </motion.p>
             </div>

@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 import {fadeIn} from '../ui/Varient'
 const Home = () => {
   return (
-   <div className="w-full lg:h-full flex flex-col lg:mt-[15%] font-clashdisplay  justify-center lg:px-16 px-2 relative h-screen items-center ">
+   <div className="w-full lg:h-screen flex flex-col  font-clashdisplay  justify-center lg:px-16 px-2 relative h-screen items-center ">
     <motion.div 
-    variants={fadeIn("up",0.2)}
+    variants={fadeIn("up",2)}
     initial="hidden"
     whileInView={"show"}
     viewport={{
@@ -14,9 +14,9 @@ const Home = () => {
     }}
 
     className="w-full leading-none mt-7 ">
-        <p className='lg:text-[70px] text-4xl lg:font-[800] leading-none uppercase tracking-tighter font-bold lg:block hidden'>Nexion Connects. </p> <br />
-        <p className='lg:text-[70px] text-5xl relative lg:font-[800] font-[500] text-orange-600 tracking-tighter pt-4 leading-[50px] lg:text-left text-left uppercase'>
-            Сreative design agency.
+        <p className='lg:text-[70px] text-4xl  leading-none uppercase tracking-tighter font-bold lg:font-bold lg:block hidden'>Nexion Connects. </p> <br />
+        <p className='lg:text-[70px] text-5xl relative lg:font-[700] font-[500] text-orange-600 tracking-tight pt-4 leading-[50px] lg:text-left text-left uppercase'>
+            Creative design agency.
             </p>
     </motion.div>
 
@@ -36,8 +36,8 @@ const Home = () => {
 
     
     <div className="">
-        <a className="px-10 py-4 bg-black text-white font-semibold rounded-3xl hover:bg-orange-600 duration-200 transition lg:text-normal   ">
-          New Project ?
+        <a href='#aboutus' className="px-10 py-4 bg-black text-white font-semibold rounded-3xl hover:bg-orange-600 duration-200 transition lg:text-normal   ">
+          Explore 
         </a>
     </div>
 

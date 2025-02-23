@@ -2,11 +2,11 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import { motion } from 'framer-motion'
 import {fadeIn} from '../ui/Varient'
-
+import founder from '../assets/founder.png'
 const Services = () => {
   return (
 
-    <div className="w-full max-h-max bg-white relative lg:pt-36 pt-20">
+    <div className="w-full max-h-max bg-white relative lg:pt-36 pt-20 relative">
    
     <motion.div className="lg:px-20 px-2"
     variants={fadeIn("left",0.1)}
@@ -16,10 +16,12 @@ const Services = () => {
         once:false,amount:0.7
     }}
      >
-        <h3 className='font-semibold text-orange-500 text-2xl px-2 uppercase'>About Us</h3>
+        <h3 className='font-semibold text-orange-500 text-2xl px-2 uppercase '>About Us</h3>
         <p className='lg:text-5xl py-2 lg:w-[60%] lg:leading-none font-black text-3xl lg:block hidden w-screen'>
         Innovate. Design. Elevate. <br /> Your Digital Success Starts Here!</p>
     </motion.div>
+
+
     <motion.div 
     variants={fadeIn("left",0.1)}
     initial="hidden"
@@ -27,7 +29,7 @@ const Services = () => {
     viewport={{
         once:false,amount:0.7
     }}
-    className="lg:flex w-full mt-5 mb-5 lg:px-20 px-3 items-center justify-stretch  ">
+    className="lg:flex w-full mt-5 mb-5 lg:px-20 px-3 items-center justify-stretch">
         <div className="lg:w-[100%] justify-between py-1 text-[13px] lg:text-[17px] font-medium text-zinc-600 lg:text-zinc-800 text-justify lg:normal-case tracking-tight uppercase">
             <p className='py-3'> Nexion Connects is a creative design agency founded in 2024 and based in Ambur, Tamil Nadu. We
  are a team of passionate students skilled in design, development, and marketing. Our goal is to help
@@ -39,7 +41,14 @@ const Services = () => {
  experience in design, web development, and branding. With this knowledge, he started Nexion
  Connects to offer professional services to businesses of all sizes.
             </p>
-            <p className='lg:block hidden'>He saw the difficulties that startups and small businesses faced in branding, web presence, and
+
+    <div className="w-full h-[350px] relative lg:hidden">
+   <img src={founder}
+    alt="founder"
+    className='w-full h-full lg:hidden object-cover'
+     />
+     </div>
+    <p className='lg:block hidden'>He saw the difficulties that startups and small businesses faced in branding, web presence, and
  marketing. 
 This motivated him to build a team that could offer practical and effective solutions.</p>
         </div>
@@ -55,7 +64,7 @@ This motivated him to build a team that could offer practical and effective solu
     viewport={{
         once:false,amount:0.7
     }}
-    className="lg:p-20 p-2 lg:flex w-full">
+    className="lg:p-20 p-2 lg:flex w-full relative">
     <div className="lg:w-[500px] w-full flex justify-evenly items-center border-l-2 ">
             <h1 className='lg:text-5xl font-bold lg:px-5  text-5xl text-orange-600 tracking-tighter'>10</h1>
             <p className='text-[12px] lg:text-base font-thin lg:leading-1 py-3 pl-3 lg:normal-case uppercase tracking-tight text-gray-600 lg:text-zinc-900 leading-0'>successful agency projects - Brand Identity, Website Design, Product Packaging</p>

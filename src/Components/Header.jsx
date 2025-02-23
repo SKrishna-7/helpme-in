@@ -22,16 +22,17 @@ const Header = () => {
   return (
     <div>
          <div>
-      <header className={`h-20  text-[15px] fixed inset-0 w-full flex items-center z-[999]
+      <header className={`h-20  text-[15px] fixed inset-0 w-full flex items-center z-[999] px-3
         ${scrolling? "bg-black text-white" : "bg-transparent"}`}>
         <nav className=" flex justify-between items-center h-full w-full  lg:px-12 px-1">
-          <div className="flex justify-center z-[999] relative">
+          <a href='#home' className="flex justify-center z-[999] relative">
+            
             <img src={Logo} alt="" className={`w-[130px] mb-2 
             ${
               scrolling ? "filter invert brightness-0" : ""
             }
             `} />          
-          </div>
+          </a>
 
           <div className="">
             <ul className="lg:flex  hidden">

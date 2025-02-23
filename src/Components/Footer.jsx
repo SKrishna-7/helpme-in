@@ -13,10 +13,10 @@ const Footer = () => {
         <div className="w-full lg:pl-20 lg:flex lg:max-w-[90%] p-5 justify-between">
             <div className="flex-col flex justify-around h-[200px]">
                 <p className='pt-4 text-lg font-bold border-t-2 w-max'>Company</p>
-                <a className='hover:text-orange-600'>Work</a>
-                <a className='hover:text-orange-600'>About Us</a>
-                <a className='hover:text-orange-600'>Services</a>
-                <a className='hover:text-orange-600'>Contact</a>
+                <a href='#work' className='hover:text-orange-600'>Work</a>
+                <a href='#aboutus' className='hover:text-orange-600'>About Us</a>
+                <a href='#contact' className='hover:text-orange-600'>Services</a>
+                <a href='#contact' className='hover:text-orange-600'>Contact</a>
             </div>
             <div className="flex flex-col justify-around h-[300px] hidden">
                 <p className='pt-4 text-lg font-bold border-t-2 w-max'>Services</p>
@@ -30,13 +30,13 @@ const Footer = () => {
            </div>
             <div className="flex flex-col mt-4">
                 <p className='pt-3 text-lg font-bold border-t-2 w-max'>Address</p>
-                <p className='lg:py-4 lg:w-[150px] text-justify'>
-                    No 3 
+                <p className='lg:py-4 tracking-wider'>
+                No.03 vavoor madhar street, ambur 635802
 </p>
-<p className='py-2 hover:text-orange-600'>+1 212.380.1761</p>
-<p className='hover:text-orange-600 px-2 pb-3'>hello@dd.nyc</p>
+<p className='py-2 hover:text-orange-600'>7598527523</p>
+<a href='Info@nexionconnects.in' className='hover:text-orange-600  pb-3'>Info@nexionconnects.in</a>
             </div>
-            <div className="flex flex-col lg:h-[250px] justify-around">
+            <div className="flex flex-col lg:h-[170px] justify-between">
                 <p className='pt-4 text-lg font-bold border-t-2 w-max pb-4'>Connect</p>
                 <p className='pt-1 hover:text-orange-600'>LinkedIn</p>
                 <p className='pt-1 hover:text-orange-600'>Instagram</p>

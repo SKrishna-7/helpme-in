@@ -106,7 +106,7 @@ export const Menus = [
   },
   {
     name: "Services",
-    link:'#services',
+    link:'#contact',
 
     subMenu: [
       {

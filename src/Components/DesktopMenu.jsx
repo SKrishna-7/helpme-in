@@ -74,7 +74,7 @@ export default function DesktopMenu({ menu ,scroll}) {
                       {menu?.subMenuHeading?.[i]}
                     </p>
                   )}
-                  <div className="flex-center gap-x-4 group/menubox">
+                  <a href={submenu.link} className="flex-center gap-x-4 group/menubox">
                     <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white/5 group-hover/menubox:text-orange-500 duration-200">
                       {submenu.icon && <submenu.icon />}
                     </div>
@@ -82,7 +82,7 @@ export default function DesktopMenu({ menu ,scroll}) {
                       <h6 className="font-semibold">{submenu.name}</h6>
                       <p className="text-sm text-orange-400">{submenu.desc}</p>
                     </div>
-                  </div>
+                  </a>
                 </div>
               ))}
           </div>
