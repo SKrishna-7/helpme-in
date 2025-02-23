@@ -24,7 +24,7 @@ function App() {
  
 
   return (
-    <>
+    <div className='overflow-x-hidden w-full'>
       <Header/>
     <div className="">
       <div id="home">
@@ -54,7 +54,7 @@ function App() {
       {/* <Portfolio/> */}
       <Footer/>
   
-    </>
+    </div>
   )
 }
 
