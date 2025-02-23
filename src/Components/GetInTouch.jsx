@@ -15,13 +15,13 @@ const GetInTouch = () => {
     );
   };
   return (
-    <div className="w-full min-h-screen bg-white flex flex-col items-center pt-20 ">
-      <h2 className="text-center text-5xl font-bold">Get in Touch with DD.NYC</h2>
+    <div className="w-full min-h-screen bg-white flex flex-col items-center lg:pt-24 ">
+      <h2 className="text-center lg:text-5xl text-2xl font-bold">Get in Touch with <b className="text-orange-500">Nexion</b></h2>
 
       {/* Form Section */}
-      <div className="w-full flex flex-col lg:flex-row py-20 px-10 justify-center gap-12 ">
+      <div className="w-full flex flex-col lg:flex-row py-20 lg:px-10 justify-center gap-12 ">
         {/* Contact Form */}
-        <div className="p-8 rounded-lg w-full lg:w-1/2">
+        <div className="lg:p-8 p-4 rounded-lg w-full lg:w-1/2">
           <form className="flex flex-col gap-6">
             {/* Input Fields */}
             {["Your Name", "Your Email", "Your Message"].map((placeholder, index) => (
@@ -44,9 +44,10 @@ const GetInTouch = () => {
           </form>
         </div>
 
-        <div className=" p-8  w-full lg:w-1/2">
+        <div className=" lg:p-8 p-4 w-full lg:w-1/2">
           <p className="text-xl font-semibold">I'm interested in...</p>
-          <div className="grid grid-cols-4  mt-5">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3 mt-5">
+
   {services.map((service) => (
     <div
       key={service}
@@ -66,7 +67,7 @@ const GetInTouch = () => {
 
 {
         selectedServices.length>0 ?
-        <div className="mt-8 p-8 w-full">
+        <div className="mt-8 lg:p-8 w-full">
         <input type="text"
         className="text-lg w-full border-b-2 p-2 outline-none focus:border-b-gray-950"
         placeholder="Tell us Your approximate Budget" />

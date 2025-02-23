@@ -16,26 +16,44 @@ import AnimatedText from './Components/Vision';
 import Recognition from './Components/Recognition';
 import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
+import OurSPA from './Components/OurSPA';
+import Aboutus from './Components/Aboutus';
+import Services from './Components/Services';
 
 function App() {
  
 
   return (
     <>
-    <BrowserRouter>
       <Header/>
+    <div className="">
+      <div id="home">
       <Home/>
-      <Work/>
-      <Stats/>
-      <Showreel/>
-      <ClientLogos/>
-      <MovingText/>
-      <GetInTouch/>
+      </div>
+      <div id="inspiration">
+      <Showreel/> 
+      </div>
+      <div id="aboutus">
+      <Services/>
+
+      </div>
+      <div id="ourspa">
+      <OurSPA/>
+
+      </div>
+      <div id="work">
+      <Aboutus/>
       <Vision/>
-      <Recognition/>
-      <Portfolio/>
+      <MovingText/>
+      </div>
+      <div id="contact">
+      <GetInTouch/>
+      </div>
+    </div>
+      {/* <ClientLogos/> */}
+      {/* <Portfolio/> */}
       <Footer/>
-    </BrowserRouter>
+  
     </>
   )
 }

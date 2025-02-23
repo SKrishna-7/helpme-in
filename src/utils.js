@@ -21,33 +21,43 @@ import { PanelTop } from "lucide-react";
 export const Menus = [
   {
     name: "Work",
-    subMenuHeading: ["Design", "Scale"],
+    subMenuHeading: ["Development", "Design"],
+    link:'#work',
     subMenu: [
       {
-        name: "Design",
-        desc: "Responsive design",
+        name: "Web Development",
+        desc: "Creating modern sites",
         icon: PanelsTopLeft,
+        link:'#work',
+
       },
       {
-        name: "Management",
-        desc: "Site control",
+        name: "UI/UX Design",
+        desc: "visually appealing interface",
         icon: Bolt,
+        
+        link:'#work',
+
       },
       {
-        name: "Navigation",
-        desc: "Link pages",
+        name: "SEO",
+        desc: "SEO & Digital Growth",
         icon: PanelTop,
+    link:'#work',
+
       },
       {
-        name: "CMS",
-        desc: "Management content",
+        name: "Graphic Design",
+        desc: "materials that represent businesses",
         icon: Database,
+    link:'#work',
+
       },
     ],
     gridCols: 2,
   },
   {
-    name: "Agency",
+    name: "About Us",
     // subMenuHeading: ["Get started", "Programs", "Recent"],
     // subMenu: [
     //   {
@@ -92,25 +102,31 @@ export const Menus = [
     //   },
     // ],
     // gridCols: 3,
+    link:'#aboutus'
   },
   {
     name: "Services",
+    link:'#services',
+
     subMenu: [
       {
         name: "Help",
         desc: "Center",
         icon: CircleHelp,
+        link:'#contact'
       },
       {
         name: "Community",
         desc: "Project help",
         icon: MessageCircle,
+        link:'#contact'
+
       },
-      {
-        name: "Emergency",
-        desc: "Urgent issues",
-        icon: TriangleAlert,
-      },
+      // {
+      //   name: "Emergency",
+      //   desc: "Urgent issues",
+      //   icon: TriangleAlert,
+      // },
     ],
     gridCols: 1,
   },
@@ -140,6 +156,7 @@ export const Menus = [
       },
     ],
     gridCols: 2,
+    link:'#contact'
   },
   // {
   //   name: "Pricing",

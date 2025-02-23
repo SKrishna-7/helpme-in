@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const MovingText = () => {
   return (
-    <div className="w-full overflow-hidden h-[300px] py-4 bg-white justify-center items-center  flex">
+    <div className="w-full overflow-hidden h-[300px] py-4 bg-white justify-center items-center  flex relative">
       <motion.div
         className="text-gray-300 text-3xl font-semibold whitespace-nowrap flex"
         
@@ -11,7 +11,7 @@ const MovingText = () => {
         transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
         whileHover={{ animationPlayState: "paused" }}
       >
-       Top System - Figma, Adobe, Sketch M/WBE-Certified 5-Star Clutch Top 40 Design Agen &nbsp;
+       Why Choose Us -  Modern & Effective Solutions - User-Friendly Approach - All-in-One Services - Collaborative Work - - Proven Results  &nbsp;
       </motion.div>
     </div>
   );

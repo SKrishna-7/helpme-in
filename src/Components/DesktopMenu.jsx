@@ -40,12 +40,12 @@ export default function DesktopMenu({ menu ,scroll}) {
       onHoverEnd={toggleHoverMenu}
       key={menu.name}
     >
-      <span className="flex justify-evenly gap-1 font-bold hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl">
+      <a href={menu.link} className="flex justify-evenly gap-1 font-bold hover:bg-white/5 cursor-pointer px-3  rounded-xl">
         {menu.name}
         {hasSubMenu && (
           <ChevronDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
         )}
-      </span>
+      </a>
       {hasSubMenu && (
         <motion.div
           className={`sub-menu ${

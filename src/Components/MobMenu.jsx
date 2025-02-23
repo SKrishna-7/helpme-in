@@ -35,14 +35,14 @@ export default function MobMenu({ Menus,scroll }) {
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
         <ul>
-          {Menus.map(({ name, subMenu }, i) => {
+          {Menus.map(({ name, subMenu,link }, i) => {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
               <li key={name} className="">
-                <span
+                <a href={link}
                   className="flex-center-between p-4 hover:bg-white/25 rounded-md cursor-pointer relative "
-                  onClick={() => setClicked(isClicked ? null : i)}
+                  onClick={() => {setClicked(isClicked ? null : i) ;hasSubMenu? none : setIsOpen(false)}}
                 >
                   {name}
                   {hasSubMenu && (
@@ -50,7 +50,7 @@ export default function MobMenu({ Menus,scroll }) {
                       className={`ml-auto ${isClicked && "rotate-180"} `}
                     />
                   )}
-                </span>
+                </a>
                 {hasSubMenu && (
                   <motion.ul
                     initial="exit"
@@ -59,13 +59,16 @@ export default function MobMenu({ Menus,scroll }) {
                     className="ml-5"
                   >
                     {subMenu.map(({ name, icon: Icon }) => (
-                      <li
+                      <a href={link}
                         key={name}
                         className="p-2 flex-center hover:bg-orange-500 hover:text-white rounded-md gap-x-2 cursor-pointer"
+                        onClick={()=>{
+                          setIsOpen(false)
+                        }}
                       >
                         <Icon size={17} />
                         {name}
-                      </li>
+                      </a>
                     ))}
                   </motion.ul>
                 )}
