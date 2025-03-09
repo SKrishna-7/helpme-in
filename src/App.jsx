@@ -31,7 +31,7 @@ function App() {
       <Home/>
       </div>
       <div id="inspiration">
-      <Showreel/> 
+       {/* <Showreel/> */}
       </div>
       <div id="aboutus">
       <Services/>
