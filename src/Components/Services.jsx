@@ -3,7 +3,7 @@ import logo from '../assets/logo.svg'
 import { motion } from 'framer-motion'
 import {fadeIn} from '../ui/Varient'
 import founder from '../assets/founder.png'
-import { Client } from './Clients'
+import  Client  from './Clients'
 const Services = () => {
   return (
 
