@@ -3,6 +3,7 @@ import logo from '../assets/logo.svg'
 import { motion } from 'framer-motion'
 import {fadeIn} from '../ui/Varient'
 import founder from '../assets/founder.png'
+import { Client } from './Client'
 const Services = () => {
   return (
 
@@ -56,8 +57,9 @@ const Services = () => {
  marketing. 
 This motivated him to build a team that could offer practical and effective solutions.</p>
         </div>
-        <div className="h-full w-full lg:flex justify-center mt-10 hidden">
-            <img src={logo} alt="logo" className='w-[200px]'/>
+        <div className="h-full w-full lg:flex justify-center  mt-16 ">
+            {/* <img src={logo} alt="logo" className='w-[200px]'/> */}
+            <Client/>
         </div>
     </motion.div>
 
@@ -68,7 +70,7 @@ This motivated him to build a team that could offer practical and effective solu
     viewport={{
         once:false,amount:0.7
     }}
-    className="lg:p-20 p-2 lg:flex w-full relative">
+    className="lg:p-20 p-2 lg:flex w-full relative pt-10">
     <div className="lg:w-[500px] w-full flex justify-evenly items-center border-l-2 ">
             <h1 className='lg:text-5xl font-bold lg:px-5  text-5xl px-2 text-orange-600 tracking-tighter'>10</h1>
             <p className='text-[12px] lg:text-base font-thin lg:leading-1 py-3 pl-2 lg:normal-case uppercase tracking-tight text-gray-600 lg:text-zinc-900 leading-0'>successful agency projects - Brand Identity, Website Design, Product Packaging</p>
